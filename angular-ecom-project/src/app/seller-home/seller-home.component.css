@@ -1,0 +1,104 @@
+/* CSS for Table */
+table {
+  text-align: left;
+  color: black;
+  border-collapse: collapse;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+table td, table th {
+  border: 1px solid rgb(231, 105, 145);
+  padding: 10px;
+  min-width: 160px;
+}
+
+.adjust-update-link {
+  margin-left: 10px;
+}
+
+/* Default styles for buttons and links */
+.custom-button {
+  background-color: rgb(231, 105, 145);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Change background color on hover */
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.pagination button:hover {
+  background-color: rgba(231, 105, 145, 0.1);
+}
+
+.pagination button.active {
+  background-color: rgb(231, 105, 145);
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+}
+
+/* CSS for Modal */
+.confirmation-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* Thay đổi kích thước modal tùy theo nhu cầu */
+  
+}
+.modal-content button {
+  margin: 10px; /* Khoảng cách giữa các button */
+  padding: 20px 40px; /* Điều chỉnh độ lớn của button */
+  text-align: center; /* Canh giữa nội dung trong button */
+  line-height: 0.5; /* Căn giữa theo chiều dọc */
+}

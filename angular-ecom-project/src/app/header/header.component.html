@@ -1,0 +1,47 @@
+<div class="header">
+  <nav class="nav">
+    <h1><a routerLink="">Ecommerce Store</a> </h1>
+    <div *ngIf="menuType!=='seller'" class="nav-search">
+      <form (submit)="submitSearch(searchInput.value)">
+        <input
+          type="text"
+          (keyup)="searchProduct($event)"
+          (blur)="delayHideSearch()"
+          placeholder="🔍Tìm kiếm sản phẩm"
+          #searchInput
+        />
+
+      </form>
+      <button (click)="submitSearch(searchInput.value)" >Tìm kiếm</button>
+      <ul class="suggested-search" *ngIf="searchResult">
+        <li *ngFor="let item of searchResult">
+          <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div [ngSwitch]="menuType">
+      <ul *ngSwitchCase="'default'" >
+        <li><a routerLink=""> 🏠 Trang chủ</a></li>
+        <li><a routerLink="product">Sản phẩm</a></li>
+        <li><a routerLink="user-auth">Đăng nhập/Đăng kí</a></li>
+        <li><a routerLink="user-auth"> 🛒 Giỏ hàng ({{ cartItems }})</a></li>
+      </ul>
+      <ul *ngSwitchCase="'user'" >
+        <li><a routerLink=""> 🏠 Trang chủ</a></li>
+        <li><a routerLink="product">Sản phẩm</a></li>
+        <li><a routerLink="my-orders" >Đơn hàng</a></li>
+        <li><a [routerLink]="cartItems > 0 ? 'cart-page' : null"> 🛒 Giỏ hàng ({{ cartItems }})</a></li>
+        <li><a routerLink="profile">{{userName | titlecase}}</a></li>
+        <li><a (click)="userLogout()" >Đăng xuất</a></li>
+      </ul>
+      <ul *ngSwitchCase="'seller'" >
+        <li><a routerLink="seller-add-product">Thêm sản phẩm mới</a></li>
+        <li><a routerLink="seller-home">Quản lý sản phẩm</a></li>
+        <li><a routerLink="seller-orders">Quản lý đơn hàng</a></li>
+        <li><a routerLink="seller-voucher">Quản lý Voucher</a></li>
+        <li><a >{{sellerName | titlecase}}</a></li>
+        <li><a (click)="logout()">Đăng xuất</a></li>
+      </ul>    
+   </div>
+  </nav>  
+</div>

@@ -1,0 +1,55 @@
+.product-details{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.product-details .product-img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.product-color{
+    border: 3px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.quantity-group{
+    margin-top: 20px;
+}
+.quantity-group button{
+    padding: 10px;
+}
+.quantity-group input{
+    padding: 10px;
+    width: 50px;
+}
+.product-details .product-img:hover {
+    transform: scale(1.1); /* Kích thước phóng to khi hover */
+    transition: transform 0.3s ease; /* Hiệu ứng phóng to mượt mà trong 0.3 giây */
+  }
+  
+  .product-details .product-img {
+    transition: transform 0.3s ease; /* Áp dụng hiệu ứng transform cho hình */
+  }
+  
+  .product-details .product-img:focus {
+    outline: none; /* Loại bỏ viền khi hình được focus */
+  }
+  .buy-button,
+.add-to-cart-button,
+back-button {
+  padding: 15px 30px;
+  background-color: #e76991;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.buy-button:hover,
+.add-to-cart-button:hover,
+back-button:hover {
+  background-color: #d6507f;
+}

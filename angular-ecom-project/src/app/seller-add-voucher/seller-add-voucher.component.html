@@ -1,0 +1,22 @@
+<div class="add-voucher">
+    <h1>Thêm Voucher</h1>
+    <form (submit)="submitVoucher()">
+      <input type="text" placeholder="Tên Voucher" [(ngModel)]="voucher.code" name="code" required>
+      <div class="input-container">
+        <p>Loại Voucher :</p>
+        <select [(ngModel)]="voucher.discountType" name="discountType" required>
+          <option value="percentage">Phần trăm (%)</option>
+          <option value="fixed_amount">Số tiền cố định ($)</option>
+        </select>
+      </div>
+      <p>Giá trị :</p>
+      <input type="number" placeholder="Giá trị" [(ngModel)]="voucher.discountValue" name="discountValue" required>
+      <p>Ngày hết hạn :</p>
+      <input type="date" placeholder="Ngày hết hạn" [(ngModel)]="voucher.validUntil" name="validUntil" required>
+      <textarea placeholder="Mô tả" [(ngModel)]="voucher.description" name="description" required></textarea>
+      <p>Số lần được sử dụng :</p>
+      <input type="number" placeholder="Lượt sử dụng tối đa" [(ngModel)]="voucher.maxUses" name="maxUses" required>
+      <button type="submit">Tạo Voucher</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">  
+    <div class="col-lg-3 ml-lg-auto">
+      <!-- Danh sách danh mục -->
+      <div class="category-frame hover-effect">
+        <h2>Danh mục</h2>
+        <ul>
+          <li routerLink="/search/{{ cat.name }}" *ngFor="let cat of listCategories">
+            <a>{{ cat.name }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-9 ml-lg-auto">
+      <!-- Danh sách sản phẩm -->
+      <div class="product-list-wrapper">
+        <h1>Danh sách sản phẩm</h1>
+        <div class="container">
+          <div class="row search-item" *ngFor="let item of visibleProducts">
+            <div class="col-sm-3">
+              <img src="{{item.image}}" alt="{{item.name}}" class="product-image">
+            </div>
+            <div class="col-sm-9 details">
+              <h6><a class="product-link">{{item.name}}</a></h6>
+              <p><b><span class="price">{{item.price}}đ</span></b></p>
+              <button class="view-details-button" [routerLink]="['/details', item.id]">Xem chi tiết</button>
+            </div>
+          </div>
+          <button class="load-more-button" (click)="loadMoreItems()" [hidden]="!isLoadMoreVisible">Hiện thêm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

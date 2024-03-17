@@ -1,0 +1,55 @@
+<div class="product-list">
+  <div>
+    <h1>Danh sách sản phẩm</h1>
+  </div>
+  
+  <p class="message-p">{{ productMessage }}</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Color</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productList">
+        <td><img src="{{ item.image }}" /></td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.color }}</td>
+        <td>{{ item.category}}</td>
+        <td>{{ item.description }}</td>
+        <td>
+          <fa-icon (click)="openConfirmationModal(item.id)" [icon]="icon"></fa-icon>
+          <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}">
+            <fa-icon  [icon]="iconEdit"></fa-icon>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <button
+      *ngFor="let page of getPages()"
+      (click)="onPageChange(page)"
+      [class.active]="currentPage === page"
+      [disabled]="currentPage === page"
+    >
+      {{ page }}
+    </button>
+  </div>
+
+  <!-- Modal for Confirmation -->
+  <div *ngIf="showConfirmationModal" class="confirmation-modal">
+    <div class="modal-content">
+      <p>Bạn có chắc chắn muốn xóa sản phẩm này không?</p>
+      <button class="form-button" (click)="onNoClick()">No</button>
+      <button class="form-button" (click)="onYesClick()">Yes</button>
+    </div>
+  </div>
+</div>

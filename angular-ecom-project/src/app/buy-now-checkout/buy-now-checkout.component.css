@@ -1,0 +1,95 @@
+.checkout h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.checkout h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Style cho modal */
+.modal {
+    display: none; /* Mặc định ẩn modal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Tạo lớp mờ nền */
+    z-index: 1;
+    overflow: auto;
+}
+
+/* Style cho nội dung modal */
+.modal-qr {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    text-align: center; /* Canh giữa nội dung */
+    border-radius: 10px; /* Bo tròn viền modal */
+}
+
+/* Style cho tiêu đề modal */
+.modal-qr h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Tạo khoảng cách dưới tiêu đề */
+}
+
+/* Style cho nội dung chuyển khoản */
+.modal-qr h3 {
+    font-size: 18px;
+    margin-top: 10px; /* Tạo khoảng cách trên nội dung */
+    margin-bottom: 10px; /* Tạo khoảng cách dưới nội dung */
+}
+
+/* Style cho số tiền chuyển khoản */
+.modal-qr h4 {
+    font-size: 16px;
+    margin-top: 5px; /* Tạo khoảng cách trên nội dung */
+    margin-bottom: 15px; /* Tạo khoảng cách dưới nội dung */
+}
+
+/* Style cho nút trong modal */
+.modal-qr button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px; /* Tạo khoảng cách trên nút */
+}
+
+/* Style cho nút khi di chuột qua */
+.modal-qr button:hover {
+    background-color: #0056b3;
+}
+
+/* Style cho hình ảnh QR Code */
+.modal-qr img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #ddd; /* Viền xung quanh hình ảnh */
+    border-radius: 10px; /* Bo tròn viền hình ảnh */
+}
+.payment-label {
+    font-weight: bold; /* Đậm để làm nổi bật nhãn */
+    display: inline-block; /* Hiển thị nhãn cùng dòng với nội dung */
+    margin-right: 10px; /* Tạo khoảng cách bên phải */
+}
+.red-text {
+    color: red; /* Đặt màu chữ thành đỏ */
+}
+
+.small-text {
+    font-size: 14px; /* Đặt kích thước chữ nhỏ hơn */
+}

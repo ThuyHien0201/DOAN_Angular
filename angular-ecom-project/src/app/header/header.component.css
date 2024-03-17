@@ -1,0 +1,80 @@
+.header {
+  background-color: #eaf2f6;
+  padding: 10px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+h1 a{
+  color: rgb(231, 105, 145);
+  text-decoration: none;
+}
+
+.nav .nav-search {
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-search input {
+  color: rgb(231, 105, 145);
+  border: 1px solid rgb(231, 105, 145);
+  height: 39px;
+  border-right: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.nav .nav-search button {
+  color: rgb(231, 105, 145);
+  border: 1px solid rgb(231, 105, 145);
+  height: 39px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  padding: 0 10px;
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: rgb(231, 105, 145);
+  cursor: pointer;
+}
+
+.suggested-search {
+  position: absolute;
+  top: 70px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid white;
+  background-color: white;
+  width: 300px;
+}
+
+.suggested-search li {
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.suggested-search li a {
+  cursor: pointer;
+  color: rgb(231, 105, 145);
+}

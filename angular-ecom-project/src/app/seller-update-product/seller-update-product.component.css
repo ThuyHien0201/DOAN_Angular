@@ -1,0 +1,21 @@
+.update-product {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+/* Đặt chiều rộng tối đa cho ảnh hiện tại */
+.current-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Đặt khoảng cách giữa ảnh và các phần tử khác */
+}
+
+/* Đặt chiều rộng tối đa cho ảnh đã chọn */
+.selected-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Đặt khoảng cách giữa ảnh và các phần tử khác */
+}

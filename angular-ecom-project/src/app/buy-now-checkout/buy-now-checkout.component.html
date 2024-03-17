@@ -1,0 +1,77 @@
+<div class="checkout">
+    <h1>Thanh toán</h1>
+    <div class="row">
+        <div class="col-sm-7">
+            <h3>Thêm địa chỉ giao hàng</h3>
+            <p class="message-p">{{orderMsg}}</p>
+            <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow()">
+              <input type="text" class="form-input" name="email" placeholder="Nhập email" [(ngModel)]="user.email" />
+              <input type="text" class="form-input" name="address" placeholder="Nhập địa chỉ" [(ngModel)]="user.address" />
+              <input type="text" class="form-input" name="contact" placeholder="Nhập chi tiết liên lạc" [(ngModel)]="user.contact" />
+              <button class="form-button">Đặt hàng</button>
+            </form>
+          </div>
+      <div class="col-sm-5">
+        <h3>Tổng tiền thanh toán: {{priceSummary.total}}$</h3>
+      <h4 for="payment-method">Phương thức thanh toán:</h4>
+      <select id="payment-method" name="payment-method" [(ngModel)]="selectedPaymentMethod">
+        <option value="cash-on-delivery">Thanh toán khi nhận hàng</option>
+        <option value="momo-payment">Thanh toán qua Momo</option>
+        <option value="zalo-payment">Thanh toán qua ZaloPay</option>
+        <option value="bankcard-payment">Thanh toán qua thẻ ngân hàng</option>
+        <!-- Thêm các tùy chọn thanh toán khác tại đây (nếu cần) -->
+      </select>
+        <!-- Thêm Modal để hiển thị hình ảnh QR và thông báo -->
+        <!-- Modal -->
+        <div id="QR-Modal" class="modal modal-large">
+          <div class="modal-qr">
+              <div class="modal-content">
+                  <!-- Phần hình ảnh -->
+                  <div class="modal-image">
+                      <img *ngIf="selectedPaymentMethod === 'momo-payment'" src="/assets/img/momo.jpg" alt="Momo QR Code" />
+                      <img *ngIf="selectedPaymentMethod === 'zalo-payment'" src="/assets/img/Zalo.jpg" alt="ZaloPay QR Code" />
+                      <img *ngIf="selectedPaymentMethod === 'bankcard-payment'" src="/assets/img/Bank.jpg" alt="Bank QR Code" />
+                  </div>
+                  
+                  <!-- Phần thông tin -->
+                  <div class="modal-info">
+                    <h2>Thông tin thanh toán</h2>
+                    <h3 *ngIf="selectedPaymentMethod === 'momo-payment'">
+                        <span class="payment-label">Nội dung chuyển khoản:</span>
+                        <h5 class="red-text small-text">Số điện thoại đã đặt hàng - Thanh toán qua MoMo</h5>
+                    </h3>
+                    <h3 *ngIf="selectedPaymentMethod === 'momo-payment'">
+                        <span class="payment-label">Số tiền chuyển khoản:</span>
+                        <h5 class="red-text small-text">{{priceSummary.total}}$</h5>
+                    </h3>
+                    <h3 *ngIf="selectedPaymentMethod === 'zalo-payment'">
+                        <span class="payment-label">Nội dung:</span>
+                        <h5 class="red-text small-text">Số điện thoại đã đặt hàng - Thanh toán qua ZaloPay</h5>
+                    </h3>
+                    <h3 *ngIf="selectedPaymentMethod === 'zalo-payment'">
+                        <span class="payment-label">Số tiền chuyển khoản:</span>
+                        <h5 class="red-text small-text">{{priceSummary.total}}$</h5>
+                    </h3>
+                    <h3 *ngIf="selectedPaymentMethod === 'bankcard-payment'">
+                        <span class="payment-label">Nội dung:</span>
+                        <h5 class="red-text small-text">Số điện thoại đã đặt hàng - Thanh toán qua Ngân hàng</h5>
+                    </h3>
+                    <h3 *ngIf="selectedPaymentMethod === 'bankcard-payment'">
+                        <span class="payment-label">Số tiền chuyển khoản:</span>
+                        <h5 class="red-text small-text">{{priceSummary.total}}$</h5>
+                    </h3>
+                </div>                
+              </div>
+              <span (click)="closeQRModal()" style="font-size: 25px;"><button> Hủy </button></span>
+              <span (click)="orderNow()" style="font-size: 25px;"><button> Tiếp tục </button></span>
+          </div>
+        </div>
+  
+        <h4>Sản phẩm đặt hàng:</h4>
+        <ul>
+          <li>{{ cartItem.name }} - Giá: {{ cartItem.price }}$ - Số lượng: {{ cartItem.quantity }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

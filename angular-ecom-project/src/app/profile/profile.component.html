@@ -1,0 +1,17 @@
+
+<div *ngIf="!isEditing">
+    <h2>Thông tin cá nhân</h2>
+    <p>Tên: {{ user.name }}</p>
+    <p>Địa chỉ: {{ user.address }}</p>
+    <p>Số điện thoại: {{ user.contact }}</p>
+    <button (click)="startEditing()">Chỉnh sửa</button>
+  </div>
+  
+  <div *ngIf="isEditing">
+    <h2>Chỉnh sửa thông tin cá nhân</h2>
+    <input [(ngModel)]="editedName" placeholder="Tên">
+    <input [(ngModel)]="editedAddress" placeholder="Địa chỉ">
+    <input [(ngModel)]="editedContact" placeholder="Số điện thoại">
+    <button (click)="saveChanges()">Lưu</button>
+  </div>
+  

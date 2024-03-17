@@ -1,0 +1,901 @@
+{
+  "seller": [
+    {
+      "name": "sam sidhu",
+      "email": "sam@seller.com",
+      "password": "abc@123",
+      "id": 5
+    },
+    {
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@test.com",
+      "id": 6
+    },
+    {
+      "name": "Như Ý",
+      "email": "NhuY@seller.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "MinhToan",
+      "email": "MinhToan@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "MinhHien",
+      "email": "MinhHien@seller.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "name": "Lemon",
+      "password": "123456",
+      "email": "abc@gmail.com",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "Iphone 14 Pro Max 128GB",
+      "price": "5600",
+      "category": "Điện thoại",
+      "color": "Black",
+      "description": "IPhone 14 Pro Max 128GB là lựa chọn phù hợp cho những ai muốn sở hữu phiên bản cao cấp nhất của dòng điện thoại iPhone 14",
+      "image": "assets/img/iphone14.jpg",
+      "id": 1
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "White",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/IPhone13_white.jpg",
+      "id": 2
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "Blue",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/Iphone13_blue.jpg",
+      "id": 3
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "Red",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/Iphone13_red.jpg",
+      "id": 4
+    },
+    {
+      "name": "Samsung Galaxy Z Flip 4 5G 128GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "Blue",
+      "description": "Galaxy Z Flip4 là chiếc smartphone sinh ra dành cho các tín đồ thời trang",
+      "image": "assets/img/Samsung_blue.jpg",
+      "id": 5
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra 5G 512GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "White",
+      "description": "Thiết kế của S23 Ultra còn rất chú trọng đến việc thân thiện với môi trường khi sử dụng 12 linh kiện bảo vệ môi trường",
+      "image": "assets/img/SamSung_white.jpg",
+      "id": 6
+    },
+    {
+      "name": "BỘ HP 280 PRO G9 - AL09",
+      "price": "100000",
+      "category": "Máy tính",
+      "color": "White",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/HP_280_PRO_G9_AL09.jpg",
+      "id": 7
+    },
+    {
+      "name": "BỘ HP PAVILION TP01 - AL08",
+      "price": "110000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 4 nhân 8 luồng, bộ nhớ đệm 12MB với tốc độ Turbo tối đa là 4.30GHz",
+      "image": "assets/img/HP_PAVILION_TP01_AL08.jpg",
+      "id": 8
+    },
+    {
+      "name": "BỘ DELL OPTIPLEX 3000MT - AL06",
+      "price": "120000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/DELL_OPTIPLEX_3000MT_AL06.jpg",
+      "id": 9
+    },
+    {
+      "name": "BỘ DELL OPTIPLEX 3000 SFF - AL05",
+      "price": "125000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/DELL_OPTIPLEX_3000MT_AL05.jpg",
+      "id": 10
+    },
+    {
+      "name": "Neo QLED 4K 75 inch Samsung ",
+      "price": "1125000",
+      "category": "Tivi",
+      "color": "Blue",
+      "description": "Màu sắc rực rỡ và có độ sâu màu lớn, tương phản rất tốt. - Tần số quét lớn nên xem rất mượt mà - Tốc độ xử lý nhanh khi kết nối với mạng có dây và không dây",
+      "image": "assets/img/Neo_QLED_4K_75_inch_Samsung.jpg",
+      "id": 11
+    },
+    {
+      "name": "The Terrace QLED Samsung 4K 75 inch",
+      "price": "1125000",
+      "category": "Tivi",
+      "color": "Black",
+      "description": "Màu sắc rực rỡ và có độ sâu màu lớn, tương phản rất tốt. - Tần số quét lớn nên xem rất mượt mà - Tốc độ xử lý nhanh khi kết nối với mạng có dây và không dây",
+      "image": "assets/img/The_Terrace_QLED_Samsung.jpg",
+      "id": 12
+    },
+    {
+      "name": "TCL 4K 43 inch",
+      "price": "725000",
+      "category": "Tivi",
+      "color": "Black",
+      "description": "Thiết kế mỏng đẹp, hình ảnh 4K hiển thị sắc nét, công nghệ HDR10 cho khung hình giàu sắc thái",
+      "image": "assets/img/TCL_4K_43_inch.jpg",
+      "id": 13
+    },
+    {
+      "name": "Samsung 4K 55 inch",
+      "price": "1025000",
+      "category": "Tivi",
+      "color": "Black",
+      "description": "Màn hình 55 inch độ phân giải 4K với hơn 8 triệu điểm ảnh, khung hình sống động nhờ bộ vi xử lý Crystal 4K",
+      "image": "assets/img/Samsung_4K_55_inch.jpg",
+      "id": 14
+    },
+    {
+      "name": "Lenovo Ideapad 5 Pro",
+      "price": "1910000",
+      "category": "Laptop",
+      "color": "Gray",
+      "description": "Chip R5-6600HS cùng card rời GTX 1650 xử lý tốt các phần mềm đồ hoạ, các tựa game AAA ở mức setting trung bình",
+      "image": "assets/img/Lenovo_Ideapad_5_Pro.png",
+      "id": 15
+    },
+    {
+      "name": "ASUS TUF DASH Gaming F15",
+      "price": "1939000",
+      "category": "Laptop",
+      "color": "Black",
+      "description": "Chip I5-12450H cùng card rời GeForce RTX 3050 chiến mọi tựa game ở mức đồ hoạ trung bình trở lên",
+      "image": "assets/img/ASUS_TUF_DASH_Gaming_F15.webp",
+      "id": 16
+    },
+    {
+      "name": "MacBook Pro 13 Touch Bar M1 256GB",
+      "price": "2939000",
+      "category": "Laptop",
+      "color": "Silver",
+      "description": "Xử lý đồ hoạ mượt mà - Chip M1 cho phép thao tác trên các phần mềm AI, Photoshop, Render Video, phát trực tiếp ở độ phân giải 4K",
+      "image": "assets/img/MacBook Pro_13_Touch_Bar_M1_256GB.webp",
+      "id": 17
+    },
+    {
+      "name": "MSI GF63 Thin 11SC 664VN",
+      "price": "939000",
+      "category": "Laptop",
+      "color": "Black",
+      "description": "sản phẩm thuộc phân khúc giá tầm trung, phù hợp với những game thủ. Đây là dòng laptop có vẻ ngoài nhỏ gọn nhưng vẫn mang đậm phong cách gaming",
+      "image": "assets/img/MSI_GF63_Thin_11SC_664VN.webp",
+      "id": 18
+    },
+    {
+      "name": "Apple Watch SE",
+      "price": "539000",
+      "category": "Đồng hồ",
+      "color": "Black",
+      "description": "Apple Watch SE 2 (2022) 40mm (GPS) Viền nhôm",
+      "image": "assets/img/Apple_Watch_SE.webp",
+      "id": 19
+    },
+    {
+      "name": "Apple Watch SE Nhôm 2022 GPS",
+      "price": "539000",
+      "category": "Đồng hồ",
+      "color": "White",
+      "description": "Apple Watch SE 2 (2022) 40mm (GPS) Viền nhôm",
+      "image": "assets/img/Apple_Watch_SE_Nhôm_2022 GPS.webp",
+      "id": 20
+    },
+    {
+      "name": "Apple Watch Series 6",
+      "price": "639000",
+      "category": "Đồng hồ",
+      "color": "Blue",
+      "description": "Thiết kế thời trang, nhiều tiện ích thông minh như điều khiển chơi nhạc, điều khiển chụp ảnh",
+      "image": "assets/img/Apple_Watch_Series_6.jpg",
+      "id": 21
+    },
+    {
+      "name": "Apple Watch Series 8",
+      "price": "639000",
+      "category": "Đồng hồ",
+      "color": "Red",
+      "description": "Thiết kế thời trang, nhiều tiện ích thông minh như điều khiển chơi nhạc, điều khiển chụp ảnh",
+      "image": "assets/img/Apple_Watch_Series_8.jpg",
+      "id": 22
+    },
+    {
+      "name": "Sony Headphones",
+      "price": "1500",
+      "category": "Tai nghe",
+      "color": "Black",
+      "description": "High-quality headphones for music lovers",
+      "image": "assets/img/Sony_Headphones.jpg",
+      "id": 23
+    },
+    {
+      "name": "LG Smart TV",
+      "price": "40000",
+      "category": "Tivi",
+      "color": "Silver",
+      "description": "55-inch smart TV with 4K resolution",
+      "image": "assets/img/LG_Smart_TV.webp",
+      "id": 24
+    },
+    {
+      "name": "Headset JBL Quantum ONE",
+      "price": "311500",
+      "category": "Tai nghe",
+      "color": "Black",
+      "description": "JBL Quantum ONE mang tới cho bạn âm thanh 360 độ chuyên nghiệp đỉnh cao",
+      "image": "assets/img/Headset_JBL_Quantum_ONE.jpg",
+      "id": 25
+    },
+    {
+      "name": "On-Ear Bluetooth JBL Live 660NC",
+      "price": "421500",
+      "category": "Tai nghe",
+      "color": "Blue",
+      "description": "JBL Live 660NC sở hữu công nghệ âm thanh JBL Signature mang đến âm thanh đầy đặn",
+      "image": "assets/img/On_Ear_Bluetooth_JBL.jpg",
+      "id": 26
+    },
+    {
+      "name": "SONY WH-1000XM5",
+      "price": "521500",
+      "category": "Tai nghe",
+      "color": "White",
+      "description": "Phong cách thiết kế theo hướng tinh giản và gọn gàng",
+      "image": "assets/img/SONY_WH_1000XM5.jpg",
+      "id": 27
+    },
+    {
+      "name": "B&O BEOPLAY H95",
+      "price": "621500",
+      "category": "Tai nghe",
+      "color": "Red",
+      "description": "Phong cách thiết kế theo hướng tinh giản và gọn gàng",
+      "image": "assets/img/B&O_BEOPLAY_H95.png",
+      "id": 28
+    },
+    {
+      "name": "Loa Bluetooth JBL Party Box 1000",
+      "price": "1621500",
+      "category": "Phụ kiện",
+      "color": "Orange",
+      "description": "Được sử dụng nhiều tại các buổi Party trong nhà, picnic, đi du lịch, dã ngoại hay nghe nhạc nghe nhạc ngoài sân vườn",
+      "image": "assets/img/Loa_Bluetooth_JBL_Party.jpg",
+      "id": 29
+    },
+    {
+      "name": "Loa Bluetooth Harman Kardon Go Play Mini",
+      "price": "921500",
+      "category": "Phụ kiện",
+      "color": "Black",
+      "description": "Được thiết kế cực đẹp như một chiếc túi xách sành điệu với quai làm bằng thép không gỉ.",
+      "image": "assets/img/Loa_Bluetooth_Harman.jpg",
+      "id": 30
+    },
+    {
+      "name": "Logitech G304 LIGHTSPEED Wireless",
+      "price": "121500",
+      "category": "Phụ kiện",
+      "color": "Black",
+      "description": "Với tông màu đen mạnh mẽ, có kích cỡ 116,6mm x 62,15mm x 38,2mm và khối lượng 99g vừa tay",
+      "image": "assets/img/Logitech_G304.jpg",
+      "id": 31
+    },
+    {
+      "name": "APPLE MAGIC MOUSE 3 ",
+      "price": "500000",
+      "category": "Phụ kiện",
+      "color": "White",
+      "description": "Kết nối không dây,Chuột di nhạy, cảm ứng mượt mà,Sử dụng pin sạc lightning",
+      "image": "assets/img/APPLE_MAGIC_MOUSE_3.webp",
+      "id": 32
+    },
+    {
+      "name": " Logitech G213 Prodigy RGB ",
+      "price": "521500",
+      "category": "Phụ kiện",
+      "color": "Black",
+      "description": "Được tùy chỉnh đặc biệt để mang lại phản ứng tiếp xúc ưu việt và cấu hình hiệu suất gần như bàn phím cơ học",
+      "image": "assets/img/Logitech_G213.jpg",
+      "id": 33
+    },
+    {
+      "name": " Logitech G413 SE Mechanical Gaming ",
+      "price": "221500",
+      "category": "Phụ kiện",
+      "color": "Black",
+      "description": "Được thiết kế với sự bền bỉ và đáng tin cậy",
+      "image": "assets/img/Logitech_G413.jpg",
+      "id": 34
+    },
+    {
+      "name": "Pin sạc dự phòng Polymer 5000mAh",
+      "price": "850000",
+      "category": "Phụ kiện",
+      "color": "Black",
+      "description": "Pin sạc dự phòng Polymer 5000mAh Không dây Magnetic Type C PD 20W Xmobile DS611 ",
+      "image": "assets/img/Pin_sạc_dự_phòng_Polymer_5000mAh.jpg",
+      "id": 35
+    },
+    {
+      "name": "Iphone 14 Pro Max 128GB",
+      "price": "5500",
+      "category": "Điện thoại",
+      "color": "White",
+      "description": "IPhone 14 Pro Max 128GB là lựa chọn phù hợp cho những ai muốn sở hữu phiên bản cao cấp nhất của dòng điện thoại iPhone 14",
+      "image": "assets/img/iphone14.jpg",
+      "id": 36
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "Black",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/IPhone13_white.jpg",
+      "id": 37
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "Orange",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/Iphone13_blue.jpg",
+      "id": 38
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "Gray",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/Iphone13_red.jpg",
+      "id": 39
+    },
+    {
+      "name": "Samsung Galaxy Z Flip 4 5G 128GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "White",
+      "description": "Galaxy Z Flip4 là chiếc smartphone sinh ra dành cho các tín đồ thời trang",
+      "image": "assets/img/Samsung_blue.jpg",
+      "id": 40
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra 5G 512GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "Silver",
+      "description": "Thiết kế của S23 Ultra còn rất chú trọng đến việc thân thiện với môi trường khi sử dụng 12 linh kiện bảo vệ môi trường",
+      "image": "assets/img/SamSung_white.jpg",
+      "id": 41
+    },
+    {
+      "name": "BỘ HP 280 PRO G9 - AL09",
+      "price": "100000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/HP_280_PRO_G9_AL09.jpg",
+      "id": 42
+    },
+    {
+      "name": "BỘ HP PAVILION TP01 - AL09",
+      "price": "110000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 4 nhân 8 luồng, bộ nhớ đệm 12MB với tốc độ Turbo tối đa là 4.30GHz",
+      "image": "assets/img/HP_PAVILION_TP01_AL08.jpg",
+      "id": 43
+    },
+    {
+      "name": "BỘ DELL OPTIPLEX 3000MT - AL07",
+      "price": "120000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/DELL_OPTIPLEX_3000MT_AL06.jpg",
+      "id": 44
+    },
+    {
+      "name": "BỘ DELL OPTIPLEX 3000 SFF - AL09",
+      "price": "125000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/DELL_OPTIPLEX_3000MT_AL05.jpg",
+      "id": 45
+    },
+    {
+      "name": "Neo QLED 4K 85 inch Samsung ",
+      "price": "1125000",
+      "category": "Tivi",
+      "color": "Blue",
+      "description": "Màu sắc rực rỡ và có độ sâu màu lớn, tương phản rất tốt. - Tần số quét lớn nên xem rất mượt mà - Tốc độ xử lý nhanh khi kết nối với mạng có dây và không dây",
+      "image": "assets/img/Neo_QLED_4K_75_inch_Samsung.jpg",
+      "id": 46
+    },
+    {
+      "name": "The Terrace QLED Samsung 4K 85 inch",
+      "price": "1125000",
+      "category": "Tivi",
+      "color": "Silver",
+      "description": "Màu sắc rực rỡ và có độ sâu màu lớn, tương phản rất tốt. - Tần số quét lớn nên xem rất mượt mà - Tốc độ xử lý nhanh khi kết nối với mạng có dây và không dây",
+      "image": "assets/img/The_Terrace_QLED_Samsung.jpg",
+      "id": 47
+    },
+    {
+      "name": "TCL 4K 50 inch",
+      "price": "725000",
+      "category": "Tivi",
+      "color": "Silver",
+      "description": "Thiết kế mỏng đẹp, hình ảnh 4K hiển thị sắc nét, công nghệ HDR10 cho khung hình giàu sắc thái",
+      "image": "assets/img/TCL_4K_43_inch.jpg",
+      "id": 48
+    },
+    {
+      "name": "Samsung 4K 55 inch",
+      "price": "1025000",
+      "category": "Tivi",
+      "color": "Silver",
+      "description": "Màn hình 55 inch độ phân giải 4K với hơn 8 triệu điểm ảnh, khung hình sống động nhờ bộ vi xử lý Crystal 4K",
+      "image": "assets/img/Samsung_4K_55_inch.jpg",
+      "id": 49
+    },
+    {
+      "name": "Lenovo Ideapad 5 Pro",
+      "price": "1910000",
+      "category": "Laptop",
+      "color": "Black",
+      "description": "Chip R5-6600HS cùng card rời GTX 1650 xử lý tốt các phần mềm đồ hoạ, các tựa game AAA ở mức setting trung bình",
+      "image": "assets/img/Lenovo_Ideapad_5_Pro.png",
+      "id": 50
+    },
+    {
+      "name": "ASUS TUF DASH Gaming F15",
+      "price": "1939000",
+      "category": "Laptop",
+      "color": "Silver",
+      "description": "Chip I5-12450H cùng card rời GeForce RTX 3050 chiến mọi tựa game ở mức đồ hoạ trung bình trở lên",
+      "image": "assets/img/ASUS_TUF_DASH_Gaming_F15.webp",
+      "id": 51
+    },
+    {
+      "name": "MacBook Pro 13 Touch Bar M1 256GB",
+      "price": "2939000",
+      "category": "Laptop",
+      "color": "Silver",
+      "description": "Xử lý đồ hoạ mượt mà - Chip M1 cho phép thao tác trên các phần mềm AI, Photoshop, Render Video, phát trực tiếp ở độ phân giải 4K",
+      "image": "assets/img/MacBook Pro_13_Touch_Bar_M1_256GB.webp",
+      "id": 52
+    },
+    {
+      "name": "MSI GF63 Thin 11SC 664VN",
+      "price": "939000",
+      "category": "Laptop",
+      "color": "Red",
+      "description": "sản phẩm thuộc phân khúc giá tầm trung, phù hợp với những game thủ. Đây là dòng laptop có vẻ ngoài nhỏ gọn nhưng vẫn mang đậm phong cách gaming",
+      "image": "assets/img/MSI_GF63_Thin_11SC_664VN.webp",
+      "id": 53
+    },
+    {
+      "name": "Apple Watch SE",
+      "price": "539000",
+      "category": "Đồng hồ",
+      "color": "White",
+      "description": "Apple Watch SE 2 (2022) 40mm (GPS) Viền nhôm",
+      "image": "assets/img/Apple_Watch_SE.webp",
+      "id": 54
+    },
+    {
+      "name": "Apple Watch SE Nhôm 2022 GPS",
+      "price": "539000",
+      "category": "Đồng hồ",
+      "color": "Black",
+      "description": "Apple Watch SE 2 (2022) 40mm (GPS) Viền nhôm",
+      "image": "assets/img/Apple_Watch_SE_Nhôm_2022 GPS.webp",
+      "id": 55
+    },
+    {
+      "name": "Apple Watch Series 6",
+      "price": "639000",
+      "category": "Đồng hồ",
+      "color": "Orange",
+      "description": "Thiết kế thời trang, nhiều tiện ích thông minh như điều khiển chơi nhạc, điều khiển chụp ảnh",
+      "image": "assets/img/Apple_Watch_Series_6.jpg",
+      "id": 56
+    },
+    {
+      "name": "Apple Watch Series 8",
+      "price": "639000",
+      "category": "Đồng hồ",
+      "color": "Orange",
+      "description": "Thiết kế thời trang, nhiều tiện ích thông minh như điều khiển chơi nhạc, điều khiển chụp ảnh",
+      "image": "assets/img/Apple_Watch_Series_8.jpg",
+      "id": 57
+    },
+    {
+      "name": "Sony Headphones",
+      "price": "1500",
+      "category": "Tai nghe",
+      "color": "Black",
+      "description": "High-quality headphones for music lovers",
+      "image": "assets/img/Sony_Headphones.jpg",
+      "id": 58
+    },
+    {
+      "name": "LG Smart TV",
+      "price": "40000",
+      "category": "Tivi",
+      "color": "Silver",
+      "description": "55-inch smart TV with 4K resolution",
+      "image": "assets/img/LG_Smart_TV.webp",
+      "id": 60
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "hyden",
+      "email": "hyden@user.com",
+      "password": "abc123",
+      "id": 3
+    },
+    {
+      "name": "tony",
+      "email": "tony@user.com",
+      "password": "abc123",
+      "id": 4
+    },
+    {
+      "name": "Huỳnh Như Ý",
+      "email": "yhuynh1601@yahoo.com",
+      "password": "123456",
+      "id": 5,
+      "address": "148 Linh Xuân Thủ Đức",
+      "contact": "0937781373"
+    },
+    {
+      "name": "Huỳnh Như Ý",
+      "email": "huynh.nhu.y1601@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "name": "hien",
+      "email": "thuyhien@gmail.com",
+      "password": "Ntth02012003",
+      "id": 8
+    }
+  ],
+  "category": [
+    {
+      "name": "Điện thoại",
+      "id": 1
+    },
+    {
+      "name": "Máy tính",
+      "id": 2
+    },
+    {
+      "name": "Tivi",
+      "id": 3
+    },
+    {
+      "name": "Laptop",
+      "id": 4
+    },
+    {
+      "name": "Đồng hồ",
+      "id": 5
+    },
+    {
+      "name": "Tai nghe",
+      "id": 6
+    },
+    {
+      "name": "Phụ kiện",
+      "id": 7
+    }
+  ],
+  "cart": [
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "Blue",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "data:image/jpeg;base64,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",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 4,
+      "id": 1
+    },
+    {
+      "name": "BỘ DELL OPTIPLEX 3000MT - AL06",
+      "price": "120000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/DELL_OPTIPLEX_3000MT_AL06.jpg",
+      "quantity": 1,
+      "productId": 9,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "name": "BỘ DELL OPTIPLEX 3000MT - AL06",
+      "price": "120000",
+      "category": "Máy tính",
+      "color": "Black",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/DELL_OPTIPLEX_3000MT_AL06.jpg",
+      "quantity": 1,
+      "productId": 9,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "name": "Samsung Galaxy Z Flip 4 5G 128GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "Blue",
+      "description": "Galaxy Z Flip4 là chiếc smartphone sinh ra dành cho các tín đồ thời trang",
+      "image": "assets/img/Samsung_blue.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 3,
+      "id": 14
+    },
+    {
+      "name": "Samsung Galaxy Z Flip 4 5G 128GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "Blue",
+      "description": "Galaxy Z Flip4 là chiếc smartphone sinh ra dành cho các tín đồ thời trang",
+      "image": "assets/img/Samsung_blue.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 2,
+      "id": 16
+    },
+    {
+      "name": "BỘ HP 280 PRO G9 - AL09",
+      "price": "100000",
+      "category": "Máy tính",
+      "color": "White",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/HP_280_PRO_G9_AL09.jpg",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 5,
+      "id": 17
+    },
+    {
+      "name": "BỘ HP 280 PRO G9 - AL09",
+      "price": "100000",
+      "category": "Máy tính",
+      "color": "White",
+      "description": "Sở hữu 6 nhân 12 luồng theo kiến trúc Alder Lake mới, hỗ trợ socket LGA 1700 mang lại hiệu năng sử dụng vô cùng vượt trội",
+      "image": "assets/img/HP_280_PRO_G9_AL09.jpg",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 5,
+      "id": 18
+    },
+    {
+      "name": "IPhone 13 128GB",
+      "price": "6000",
+      "category": "Điện thoại",
+      "color": "White",
+      "description": "Máy mới 100% , chính hãng Apple Việt Nam.",
+      "image": "assets/img/IPhone13_white.jpg",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 19
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra 5G 512GB",
+      "price": "8000",
+      "category": "Điện thoại",
+      "color": "White",
+      "description": "Thiết kế của S23 Ultra còn rất chú trọng đến việc thân thiện với môi trường khi sử dụng 12 linh kiện bảo vệ môi trường",
+      "image": "assets/img/SamSung_white.jpg",
+      "quantity": 1,
+      "productId": 6,
+      "userId": 5,
+      "id": 20
+    }
+  ],
+  "orders": [
+    {
+      "email": "sam@seller.com",
+      "address": "109/47/5, đường 8, khu phố 1, Linh Xuân, Thủ Đức, TP Hồ Chí Minh",
+      "contact": "0937781373",
+      "status": "Đã xác nhận",
+      "totalPrice": 16600,
+      "userId": 6,
+      "id": 1,
+      "items": [
+        {
+          "name": "Iphone 14 Pro Max 128GB",
+          "price": "5500",
+          "quantity": 1,
+          "image": "assets/img/iphone14.jpg"
+        },
+        {
+          "name": "Iphone 14 Pro Max 128GB",
+          "price": "5500",
+          "quantity": 2,
+          "image": "assets/img/iphone14.jpg"
+        }
+      ]
+    },
+    {
+      "email": "yhuynh1601@yahoo.com",
+      "address": "148 Linh Xuân Thủ Đức",
+      "contact": "0937781373",
+      "status": "Đang chờ xác nhận",
+      "totalPrice": 19900,
+      "userId": "5",
+      "paymentMethod": "momo-payment",
+      "id": 2,
+      "items": [
+        {
+          "name": "IPhone 13 128GB",
+          "price": "6000",
+          "quantity": 1,
+          "image": "assets/img/IPhone13_white.jpg"
+        },
+        {
+          "name": "IPhone 13 128GB",
+          "price": "6000",
+          "quantity": 1,
+          "image": "assets/img/IPhone13_white.jpg"
+        },
+        {
+          "name": "IPhone 13 128GB",
+          "price": "6000",
+          "quantity": 1,
+          "image": "assets/img/IPhone13_white.jpg"
+        }
+      ]
+    },
+    {
+      "email": "thuyhien@gmail.com",
+      "status": "Đang chờ xác nhận",
+      "totalPrice": 6060,
+      "userId": "8",
+      "paymentMethod": "momo-payment",
+      "id": 3,
+      "items": [
+        {
+          "name": "Iphone 14 Pro Max 128GB",
+          "price": "5600",
+          "quantity": 1,
+          "image": "assets/img/iphone14.jpg"
+        }
+      ]
+    }
+  ],
+  "vouchers": [
+    {
+      "code": "Giảm 10% giá trị đơn hàng ",
+      "discountType": "percentage",
+      "discountValue": "10",
+      "validUntil": "2023-12-31",
+      "description": "Áp dụng cho tất cả sản phẩm trong cửa hàng - Áp dụng cho mọi hình thức thanh toán",
+      "maxUses": "5",
+      "id": 1
+    },
+    {
+      "code": "Giảm 5% giá trị đơn hàng",
+      "discountType": "percentage",
+      "discountValue": 5,
+      "validUntil": "2023-12-31",
+      "description": "Áp dụng cho tất cả sản phẩm trong cửa hàng - Áp dụng cho mọi hình thức thanh toán",
+      "maxUses": 10,
+      "id": 2
+    },
+    {
+      "code": "Giảm 200$",
+      "discountType": "fixed_amount",
+      "discountValue": 200,
+      "validUntil": "2023-12-31",
+      "description": "Áp dụng cho tất cả sản phẩm trong cửa hàng - Áp dụng cho mọi hình thức thanh toán",
+      "maxUses": 15,
+      "id": 3
+    },
+    {
+      "code": "Free ship",
+      "discountType": "fixed_amount",
+      "discountValue": 100,
+      "validUntil": "2023-12-31",
+      "description": "Áp dụng cho tất cả sản phẩm trong cửa hàng - Áp dụng cho mọi hình thức thanh toán",
+      "maxUses": 20,
+      "id": 4
+    },
+    {
+      "code": "Giảm 50$",
+      "discountType": "fixed_amount",
+      "discountValue": 50,
+      "validUntil": "2023-12-31",
+      "description": "Áp dụng cho đơn hàng có giá trị từ 500$ trở lên - Áp dụng cho thanh toán qua chuyển khoản",
+      "maxUses": 5,
+      "id": 6
+    },
+    {
+      "id": "200fe4b1-cf54-4ab0-8d4b-89f9bc9a7e86",
+      "code": "Giảm 15% giá trị đơn hàng",
+      "discountType": "percentage",
+      "discountValue": 15,
+      "validUntil": "2023-11-13",
+      "description": "Áp dụng cho mọi sản phẩm trong cửa hàng",
+      "maxUses": 5
+    },
+    {
+      "id": "85576632-7af4-4400-85c2-ae5560011593",
+      "code": "Giảm 20% giá trị đơn hàng",
+      "discountType": "percentage",
+      "discountValue": 20,
+      "validUntil": "2023-11-18",
+      "description": "Ưu đãi đặc biệt - Nhanh tay có giới hạn",
+      "maxUses": 3
+    }
+  ]
+}

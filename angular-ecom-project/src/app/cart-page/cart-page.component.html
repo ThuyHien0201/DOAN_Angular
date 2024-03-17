@@ -1,0 +1,83 @@
+<div class="cart-page">
+    <h1>Giỏ hàng</h1>
+    <div class="row">
+        <div class="col-sm-8 details">
+            <div *ngFor="let cart of cartData" class="cart-item">
+                <div class="column">
+                    <img src="{{ cart.image }}" alt="{{ cart.image }}">
+                </div>
+                <div class="column">
+                    <span> {{ cart.name }}</span>
+                </div>
+                <div class="column">
+                    <span> Giá : {{ cart.price }}$</span>
+                </div>
+                <div class="column">
+                    <span>Số lượng:
+                        <button (click)="decreaseQuantity(cart)">-</button>
+                        {{ cart.quantity }}
+                        <button (click)="increaseQuantity(cart)">+</button>
+                    </span>
+                </div>
+                <div class="column">
+                    <button class="form-button" (click)="confirmDeleteProduct(cart.id)">Xóa khỏi giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 summary">
+            <h3>Tổng thanh toán</h3>
+            <ul id="summary">
+                <li> <span>Tổng tiền sản phẩm :</span><span>{{ priceSummary.price }}$</span></li>
+                <li> <span>Thuế VAT:</span><span>{{ priceSummary.tax }}$</span></li>
+                <li> <span>Phí giao hàng:</span><span>{{ priceSummary.delivery }}$</span></li>             
+                <li> <span>Voucher đang áp dụng:</span><span>{{ selectedVoucher ? selectedVoucher : 'Chưa áp dụng' }}</span></li>
+                <li><button *ngIf="selectedVoucher !== ''" (click)="clearSelectedVoucher()">Bỏ sử dụng voucher</button></li>
+                <li> <span>Giảm giá:</span><span>{{ priceSummary.discountFromVoucher }}$</span></li>
+                <li> <span><h4>Tổng cộng</h4></span> <span><h4>{{ priceSummary.total}}$</h4></span></li>
+                <button (click)="checkout()" class="form-button max-width">Thanh toán</button>
+            </ul>
+            <!-- Thêm phần hiển thị danh sách voucher và cho phép người dùng chọn -->
+          <button (click)="openVoucherListModal()">Xem danh sách voucher</button>
+          <!-- Modal -->
+          <div id="voucherListModal" class="modal modal-small">
+              <div class="modal-content">
+                  <span class="close" (click)="closeVoucherListModal()" style="font-size: 30px;">&times;</span>
+                  <h2>Danh sách voucher</h2>
+                  <ul> 
+                  <li *ngFor="let voucher of vouchers">
+                          <li *ngFor="let voucher of vouchers">
+                          <label class="voucher-item">
+                              <input type="radio" name="selectedVoucher" [value]="voucher.code"
+                              (change)="onVoucherSelectionChange(voucher.code)" [checked]="voucher.selected" />              
+                              <div class="voucher-details">
+                              <img src="assets/img/voucher.png" alt="Voucher">
+                              <div class="voucher-info">
+                                <h4>{{ voucher.code }}</h4>
+                                <p>{{ voucher.description }}</p>
+                                <p>Hết hạn: {{ voucher.validUntil | date:'dd/MM/yyyy' }}</p>
+                            </div>                            
+                            </div>
+                        </label>
+                </li>
+                </ul>
+                <span (click)="closeVoucherListModal()" style="font-size: 25px;"><button> Đóng</button></span>
+            </div>
+        </div>
+        <!-- Modal for Confirmation -->
+        <div *ngIf="showConfirmationModal" class="confirmation-modal">
+            <div class="modal-contentcart">
+                <p>Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?</p>
+                <button class="form-button" (click)="cancelDelete()">Hủy</button>
+                <button class="form-button" (click)="deleteFromCart()">Xóa</button>
+            </div>
+        </div>
+        <div *ngIf="showConfirmVoucherModal" class="confirmation-modal">
+            <div class="modal-contentcart">
+              <p>Bạn có chắc chắn muốn bỏ sử dụng voucher?</p>
+              <button class="form-button" (click)="cancelClearSelectedVoucher()">Hủy</button>
+              <button class="form-button" (click)="confirmClearSelectedVoucher()">Xác nhận</button>
+              </div>
+            </div>
+          </div>          
+      </div>
+  </div>

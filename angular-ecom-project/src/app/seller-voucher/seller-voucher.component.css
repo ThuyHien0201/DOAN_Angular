@@ -1,0 +1,62 @@
+table{
+  text-align: left;
+  color: black;
+  border-collapse: collapse;
+}
+table td , table th{
+  border: 1px solid rgb(231, 105, 145);
+  padding: 10px;
+  min-width: 160pxs;
+}
+.adjust-update-link{
+  margin-left: 10px;
+}
+/* Thiết lập các kiểu mặc định cho nút và liên kết */
+.custom-button {
+  background-color: rgb(231, 105, 145);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Đổi màu nền khi di chuột vào */
+.custom-button:hover {
+  background-color: #0056b3;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.pagination button:hover {
+  background-color: rgba(231, 105, 145, 0.1);
+}
+
+.pagination button.active {
+  background-color: rgb(231, 105, 145);
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+}
+ 

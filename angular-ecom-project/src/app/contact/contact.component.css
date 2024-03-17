@@ -1,0 +1,52 @@
+/* CSS cho tiêu đề h1 */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* CSS cho phần giới thiệu */
+p {
+    font-size: 18px;
+    text-align: left;
+    color: #666;
+}
+
+/* CSS cho các phần thông tin liên hệ */
+h3 {
+    font-size: 24px;
+    color: #0088cc;
+}
+
+/* CSS cho địa chỉ */
+.address {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* CSS cho số điện thoại và email */
+.contact-info {
+    font-size: 16px;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+/* CSS cho nút liên hệ */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng nút hover */
+.button:hover {
+    background-color: #0066cc;
+}

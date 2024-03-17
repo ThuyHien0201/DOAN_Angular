@@ -1,0 +1,56 @@
+.add-voucher {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .add-voucher h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-voucher form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-voucher input[type="text"],
+  .add-voucher input[type="number"],
+  .add-voucher input[type="date"],
+  .add-voucher textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-voucher button {
+    background-color:rgb(231, 105, 145);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-voucher button:hover {
+    background-color: #0056b3;
+  }
+  
+.input-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  

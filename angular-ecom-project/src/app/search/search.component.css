@@ -1,0 +1,124 @@
+.search-header {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-image {
+  width: 100%;
+  max-height: 200px;
+}
+
+.details {
+  padding-left: 20px;
+}
+
+.product-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-details-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.view-details-button:hover {
+  background-color: rgb(231, 105, 145);
+}
+
+.price {
+  color: red;
+}
+ /* CSS cho danh mục sản phẩm */
+ .category-frame {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.category-frame h2 {
+  text-align: center;
+}
+
+.category-frame ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-frame li {
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.category-frame li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.category-frame li a:hover {
+  color: rgb(231, 105, 145);
+}
+/* CSS cho mục Danh mục */
+.category-frame li {
+margin-bottom: 5px;
+padding: 8px;
+border-radius: 15px; /* Đặt góc bo tròn */
+}
+
+.category-frame li a {
+text-decoration: none;
+color: black; /* Màu chữ là đen */
+font-size: 14px; /* Điều chỉnh kích thước chữ */
+}
+
+.category-frame li a:hover {
+background-color: rgba(231, 105, 145, 0.1); /* Hiệu ứng hover */
+color: rgb(231, 105, 145); /* Màu chữ khi hover */
+}
+
+/* Hiệu ứng hover khi rê chuột vào mục Danh mục */
+.category-frame li:hover {
+background-color: rgba(231, 105, 145, 0.1);
+border: 1px solid rgb(231, 105, 145);
+transition: background-color 0.3s ease-in-out;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.pagination button:hover {
+  background-color: rgba(231, 105, 145, 0.1);
+}
+
+.pagination button.active {
+  background-color: rgb(231, 105, 145);
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+}

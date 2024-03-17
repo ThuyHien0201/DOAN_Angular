@@ -1,0 +1,45 @@
+<div class="voucher-list">
+    <div>
+      <h1>Danh sách voucher</h1>
+    </div>
+    <p class="message-p">{{ voucherMessage }}</p>
+    <button routerLink="/seller-add-voucher">Thêm Voucher</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Tên Voucher</th>
+          <th>Loại giảm giá</th>
+          <th>Giá trị giảm giá</th>
+          <th>Hạn sử dụng</th>
+          <th>Mô tả</th>
+          <th>Số lần sử dụng tối đa</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let voucher of voucherList">
+          <td>{{ voucher.code }}</td>
+          <td>{{ voucher.discountType }}</td>
+          <td>{{ voucher.discountValue }} {{ voucher.discountType === 'percentage' ? '%' : '$' }}</td>
+          <td>{{ voucher.validUntil }}</td>
+          <td>{{ voucher.description }}</td>
+          <td>{{ voucher.maxUses }}</td>
+          <td>
+            <fa-icon (click)="deleteVoucher(voucher.id)" [icon]="icon"></fa-icon>
+            <a class="adjust-update-link" routerLink="/seller-update-voucher/{{voucher.id}}"> <fa-icon  [icon]="iconEdit"></fa-icon></a>
+          </td>
+        </tr>        
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button
+        *ngFor="let page of getPages()"
+        (click)="onPageChange(page)"
+        [class.active]="currentPage === page"
+        [disabled]="currentPage === page"
+      >
+        {{ page }}
+      </button>
+    </div>
+  </div>
+  

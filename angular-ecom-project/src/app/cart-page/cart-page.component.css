@@ -1,0 +1,135 @@
+/* Thêm các kiểu cho các phần tử chính */
+.cart-page {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.cart-page h1 {
+    text-align: center;
+}
+
+.details img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Cố định kích thước của hình ảnh */
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Giữ nguyên tỷ lệ khung hình */
+}
+
+/* Các kiểu cho phần tổng thanh toán */.summary h3{
+    text-align: center;
+}
+
+.summary ul {
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 15px;
+}
+.summary ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.vouchers {
+    margin-top: 20px;
+}
+
+.voucher-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.voucher-details {
+    display: flex;
+    align-items: center;
+}
+
+.voucher-details img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.voucher-info {
+    flex-grow: 1;
+}
+
+.voucher-info h4 {
+    margin: 0;
+}
+
+.voucher-info p {
+    margin: 0;
+}
+
+.voucher-info p:last-child {
+    font-weight: bold;
+}
+/* CSS cho modal nhỏ hơn */
+  .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+ 
+}
+
+.modal-content {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* Thay đổi kích thước modal tùy theo nhu cầu */
+  
+}
+
+
+/* CSS cho modal contentCart */
+.modal-contentcart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e0b7c9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Thay đổi kích thước modal tùy theo nhu cầu */
+    text-align: center; /* Canh giữa nội dung */
+  }
+  
+  /* CSS chỉ cho button nằm cách nhau và căn giữa */
+  .modal-contentcart button {
+    margin: 10px; /* Khoảng cách giữa các button */
+    padding: 20px 40px; /* Điều chỉnh độ lớn của button */
+    text-align: center; /* Canh giữa nội dung trong button */
+    line-height: 0.5; /* Căn giữa theo chiều dọc */
+  }
+  

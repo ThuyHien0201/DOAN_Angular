@@ -1,0 +1,53 @@
+<div class="add-product">
+  <h1>Thêm sản phẩm mới</h1>
+  <p class="message-p">{{addProductMessage}}</p>
+  <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Name"
+      name="name"
+      ngModel
+    />
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Price"
+      name="price"
+      ngModel
+    />
+    <select class="form-input" name="category" ngModel="{{productData?.category}}">
+      <option value="" disabled selected>Select Product Category</option>
+      <option *ngFor="let category of productCategories" [value]="category.name">{{ category.name }}</option>
+    </select>
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Color"
+      name="color"
+      ngModel
+    />
+    <textarea
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Description"
+      name="description"
+      ngModel
+    ></textarea>
+    
+    <!-- Thêm trường tải tệp -->
+    
+      <input
+        type="file"
+        name="productImage"
+        id="productImage"
+        (change)="onImageSelected($event)"
+        ngModel
+      />
+      <img [src]="imageUrl" alt="Product Image" *ngIf="imageUrl" />
+
+  
+    <button type="ngSubmit" class="form-button">Thêm Sản phẩm</button>
+
+  </form>
+</div>

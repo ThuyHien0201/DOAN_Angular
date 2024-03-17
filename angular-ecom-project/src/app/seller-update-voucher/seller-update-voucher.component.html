@@ -1,0 +1,46 @@
+<div class="update-voucher">
+    <h1>Cập nhật Voucher</h1>
+    <p class="message-p">{{ voucherMessage }}</p>
+    <form #updateVoucherForm="ngForm" (ngSubmit)="submit(updateVoucherForm.value)" class="common-form">
+      <input
+        type="text"
+        class="form-input"
+        placeholder="Voucher Code"
+        name="code"
+        ngModel="{{voucherData?.code}}"
+      />
+      <select class="form-input" name="discountType" ngModel="{{voucherData?.discountType}}">
+        <option value="percentage">Percentage</option>
+        <option value="fixed">Fixed</option>
+      </select>
+      <input
+        type="number"
+        class="form-input"
+        placeholder="Discount Value"
+        name="discountValue"
+        ngModel="{{voucherData?.discountValue}}"
+      />
+      <input
+        type="date"
+        class="form-input"
+        name="validUntil"
+        ngModel="{{voucherData?.validUntil}}"
+      />
+      <textarea
+        type="text"
+        class="form-input"
+        placeholder="Description"
+        name="description"
+        ngModel="{{voucherData?.description}}"
+    ></textarea>
+      <input
+        type="number"
+        class="form-input"
+        placeholder="Max Uses"
+        name="maxUses"
+        ngModel="{{voucherData?.maxUses}}"
+      />
+      <button class="form-button">Update Voucher</button>
+    </form>
+</div>
+  
